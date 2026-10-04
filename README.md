@@ -86,3 +86,57 @@ Cada suite restablece PostgreSQL y MongoDB antes de ejecutarse y cierra las cone
 | DELETE | `/activities/:id` | Eliminar actividad |
 
 Los errores se devuelven como JSON: `{ "error": "Contact not found" }`.
+
+
+## Respuestas
+
+### Sobre la arquitectura
+
+**1. Dos motores.**
+
+
+
+**2. ORM vs ODM.**
+
+
+**3. Configuración por variables de entorno.**
+
+
+
+### Sobre Sequelize y PostgreSQL
+
+**4. Asociaciones.**
+
+
+
+**5. Eager loading.**
+
+
+**6. Instancia vs consulta.**
+
+
+### Sobre Mongoose y MongoDB
+
+**7. Esquema flexible.**
+
+
+**8. Sin ref.**
+
+
+**9. Documento actualizado.**
+
+
+### Sobre pruebas y proceso
+
+**10. Pruebas de comportamiento.**
+
+
+**11. Repetibilidad.**
+
+
+**12. Tu experiencia.**
+
+
+## Evidencia
+
+![alt text](image.png)
