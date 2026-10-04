@@ -31,10 +31,13 @@ async function update(req, res) {
     return res.status(404).json({ error: 'Contact not found' });
   }
 
-  // TODO CHALLENGE 07: actualizar el contacto con los datos recibidos en req.body
+  await contact.update(req.body, {
+    fields: ['firstName', 'lastName', 'email', 'phone', 'companyId']
+  });
 
   res.status(200).json(contact);
 }
+// TODO CHALLENGE 07: actualizar el contacto con los datos recibidos en req.body
 
 async function remove(req, res) {
   const deleted = await Contact.destroy({ where: { id: req.params.id } });
